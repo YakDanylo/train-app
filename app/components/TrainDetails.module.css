@@ -1,0 +1,97 @@
+.train {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+  border: 0.5px solid black;
+  margin: 5px;
+}
+.placeData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  width: 90%;
+}
+.placeData__departure p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.placeData__arrive {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.placeData__arrive p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.dateData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 5px;
+  width: 90%;
+}
+
+.dateData__departureDate {
+  display: flex;
+  flex-direction: column;
+}
+.dateData__departureDate p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.dateData__arriveDate {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.dateData__arriveDate p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.buttonsWrapper__cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(189, 188, 188);
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.buttonsWrapper__delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(251, 62, 62);
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.buttonsWrapper__edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(13, 136, 13);
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

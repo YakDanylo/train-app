@@ -1,0 +1,59 @@
+.train {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+  border: 0.5px solid black;
+  margin: 5px;
+  cursor: pointer;
+}
+.placeData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  width: 90%;
+}
+.placeData__departure {
+}
+.placeData__departure p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.placeData__arrive {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.placeData__arrive p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.dateData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 5px;
+  width: 90%;
+}
+
+.dateData__departureDate {
+  display: flex;
+  flex-direction: column;
+}
+.dateData__departureDate p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.dateData__arriveDate {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.dateData__arriveDate p {
+  font-size: 18px;
+  font-weight: bold;
+}

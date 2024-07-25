@@ -1,0 +1,26 @@
+.searchWrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 100px;
+  background-color: #3a95ef;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.searchWrapper:hover {
+  background-color: #2f82d4;
+}
+.search {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.search:hover {
+  font-size: 60px;
+}
