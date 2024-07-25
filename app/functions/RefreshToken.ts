@@ -1,4 +1,3 @@
-import { cookies } from "next/headers";
 import { refresh } from "../services/auth-service";
 import { NextRequest, NextResponse } from "next/server";
 

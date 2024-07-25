@@ -10,7 +10,7 @@ export default function ChangeTrain({ train }: { train: ITrain }) {
   const [departureDate, setDepartureDate] = useState(train.departureDate);
   const [arriveDate, setArriveDate] = useState(train.arriveDate);
   const router = useRouter();
-  async function handleSaveTrain(e: any) {
+  async function handleSaveTrain(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     const body = {
       id: train.id,
@@ -24,7 +24,7 @@ export default function ChangeTrain({ train }: { train: ITrain }) {
     router.push("/schedule");
     router.refresh();
   }
-  function handleCancel(e: any) {
+  function handleCancel(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     router.push("/schedule");
   }

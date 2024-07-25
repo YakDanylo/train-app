@@ -1,16 +1,17 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import classes from "./SearchTrainForm.module.css";
 import { useRouter } from "next/navigation";
 import { searchTrains } from "../services/train-service";
+import { ITrain } from "../interfaces/train-interface";
 export default function SearchTrainForm({
   setTrains,
   setError,
   setLoader,
 }: {
-  setTrains: (data: any) => void;
+  setTrains: (trains: ITrain[]) => void;
   setError: (data: any) => void;
-  setLoader: (data: any) => void;
+  setLoader: (data: boolean) => void;
 }) {
   const [departure, setDeparture] = useState("");
   const [arrive, setArrive] = useState("");
@@ -21,7 +22,7 @@ export default function SearchTrainForm({
     new Date().toISOString()
   );
   const router = useRouter();
-  async function handleSubmit(e: any) {
+  async function handleSubmit(e: React.MouseEvent<HTMLButtonElement>) {
     setLoader(true);
     setTrains([]);
     setError("");
@@ -46,7 +47,7 @@ export default function SearchTrainForm({
     setTrains(response);
     setLoader(false);
   }
-  function handleCancel(e: any) {
+  function handleCancel(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     router.back();
   }

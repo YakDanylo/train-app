@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import classes from "./TrainAddForm.module.css";
 import { useRouter } from "next/navigation";
 import { addTrain } from "../services/train-service";
@@ -10,7 +10,7 @@ export default function TrainAddForm() {
   const [departureDate, setDepartureDate] = useState(new Date());
   const [arriveDate, setArriveDate] = useState(new Date());
   const router = useRouter();
-  async function handleSubmit(e: any) {
+  async function handleSubmit(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     addTrain({ departure, arrive, departureDate, arriveDate });
     setDeparture("");
@@ -20,7 +20,7 @@ export default function TrainAddForm() {
     router.push("/schedule");
     router.refresh();
   }
-  function handleCancel(e: any) {
+  function handleCancel(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     setDeparture("");
     setArrive("");

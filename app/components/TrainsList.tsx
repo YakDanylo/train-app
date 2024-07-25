@@ -18,6 +18,7 @@ export default function TrainsList({ trains }: { trains: ITrain[] }) {
       <div>
         <label>Sort by:</label>
         <select onChange={handleChangeSort}>
+          <option value=""></option>
           <option value="departureName">Departure Name</option>
           <option value="arriveName">Arrive Name</option>
           <option value="departureDateNearest">Departure Date - nearest</option>
